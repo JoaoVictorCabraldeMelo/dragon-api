@@ -4,7 +4,6 @@ import { GreenButton, RedButton } from "../../components/Buttons/Buttons";
 import { useEffect, useState } from "react";
 import { HomeContainer, ContainerDragon } from "../../components/Layout/Home";
 import { useNavigate } from "react-router-dom";
-import { FormWrapper } from "../../components/Layout/Login";
 import Input from "../../components/Input/Input";
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     getAllDragons();
-  }, []);
+  });
 
   const navigate = useNavigate();
 

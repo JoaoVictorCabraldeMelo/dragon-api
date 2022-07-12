@@ -12,7 +12,7 @@ const DragonShow = () => {
 
   useEffect(() => {
     if (params.id) showDragon(params?.id);
-  }, []);
+  });
 
   const [data, setData] = useState<DragonRequest>({
     name: "",
